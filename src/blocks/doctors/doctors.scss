@@ -1,0 +1,140 @@
+@use 'lib' as *;
+
+.doctors {
+	$self: &;
+
+	padding-bottom: fluid(70px, 50px);
+	overflow: hidden;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&.container {
+			@include media("<=xs") {
+				width: 100%;
+				padding: 0 12px;
+			}
+		}
+	}
+
+	&__title {
+		font-size: fluid(40px, 28px);
+		margin-bottom: fluid(48px, 24px);
+		background: linear-gradient(90deg, #130890 0%, #000000 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		font-weight: 600;
+
+		b {
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+	}
+
+	&__swiper.swiper {
+		overflow: visible;
+		width: 100%;
+	}
+
+	&__item.swiper-slide {
+		padding: fluid(32px, 20px);
+		background: #fff;
+		box-shadow: 0px 4px 25px 0px #0000001A;
+		border-radius: 10px;
+		display: grid;
+		grid-template-columns: auto minmax(250px, 579px);
+		gap: 32px;
+		justify-content: space-between;
+
+		@include media("<=xs") {
+			grid-template-columns: 100%;
+		}
+	}
+
+	&__item-side {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__item-name {
+		font-size: 24px;
+		font-weight: 700;
+		margin-bottom: 12px;
+	}
+
+	&__item-who {
+		margin-bottom: 8px;
+	}
+
+	&__item-list {
+		margin-bottom: 16px;
+		> b {
+			display: block;
+			margin-bottom: 12px;
+		}
+
+		ul {
+			padding-left: 32px;
+		}
+
+		li {
+			list-style: disc;
+		}
+	}
+
+	&__item-btns {
+		margin-top: auto;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+
+		@include media("<=xs") {
+			width: 100%;
+			flex-direction: column;
+		}
+	}
+
+	&__item-btn {
+		text-align: center;
+		font-size: 14px;
+		padding: 14px 24px;
+		flex: 1 1 auto;
+		width: 100%;
+		text-wrap: nowrap;
+
+		&_red {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: var(--red);
+			color: #fff;
+			border-radius: 30px;
+		}
+
+		&_trans {
+			color: var(--red);
+		}
+	}
+
+	&__item-image {
+		overflow: hidden;
+		border-radius: 10px;
+		height: 344px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		@include media("<=xs") {
+			order: -1;
+		}
+	}
+
+}

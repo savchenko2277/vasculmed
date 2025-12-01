@@ -1,0 +1,115 @@
+@use 'lib' as *;
+
+.contacts {
+	$self: &;
+
+	padding-bottom: fluid(80px, 40px);
+
+	&__container.container {
+		display: grid;
+		grid-template-columns: minmax(auto, 620px) minmax(400px, 1fr);
+		gap: 8px;
+
+		@include media("<=sm") {
+			grid-template-columns: 1fr;
+			gap: 12px;
+			width: 100%;
+		}
+	}
+
+	&__content {
+		padding: fluid(40px, 24px) fluid(32px, 24px) 22px fluid(32px, 24px);
+		background: #EFF3F8;
+		border-radius: 16px;
+	}
+
+	&__title {
+		font-size: fluid(40px, 28px);
+		background: linear-gradient(90deg, #130890 0%, #000000 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		font-weight: 600;
+		margin-bottom: 24px;
+		width: fit-content;
+	}
+
+	&__address {
+		margin-bottom: 15px;
+		font-size: 20px;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-bottom: 28px;
+
+		li {
+			font-size: 16px;
+		}
+	}
+
+	&__call {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-bottom: fluid(60px, 38px);
+
+		b {
+			font-size: 16px;
+			font-weight: 400;
+		}
+
+		a {
+			font-size: 22px;
+			font-weight: 800;
+			color: var(--red);
+		}
+	}
+
+	&__btns {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 12px;
+		align-items: center;
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 240px;
+		padding: 12px;
+		border-radius: 30px;
+		color: #fff;
+		font-weight: 500;
+		flex: 1 1 auto;
+
+		&_red {
+			background: var(--red);
+		}
+
+		&_blue {
+			background: #223F81;
+		}
+
+		@include media("<=sm") {
+			max-width: 100%;
+		}
+	}
+
+	&__map {
+		border-radius: 10px;
+		overflow: hidden;
+		min-height: 223px;
+
+		@include media("<=sm") {
+			order: -1;
+		}
+	}
+
+}

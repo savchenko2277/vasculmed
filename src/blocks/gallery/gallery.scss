@@ -14,11 +14,17 @@
 
 	&__title {
 		font-size: fluid(40px, 28px);
-		font-weight: 800;
+		font-weight: 700;
 		margin-bottom: fluid(32px, 24px);
+		background: linear-gradient(90deg, #130890 0%, #000000 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
 
 		b {
-			color: var(--orange);
+			font-weight: 700;
+			text-transform: uppercase;
 		}
 	}
 
@@ -29,32 +35,35 @@
 
 	&__swiper {
 		width: 100%;
-		margin-bottom: 65px;
+		margin-bottom: fluid(65px, 30px);
+	}
 
-
-		.swiper-slide {
-			height: 300px;
+	&__slide {
+		img {
+			aspect-ratio: 1 / 1;
+			object-fit: cover;
+			width: 100%;
 			border-radius: 20px;
-			overflow: hidden;
+			margin-bottom: 20px;
 			cursor: pointer;
-
-			img {
-				width: 100%; height: 100%;
-				object-fit: cover;
-				object-position: left;
-			}
 		}
+	}
+
+	&__slide-text {
+		text-align: start;
+		padding-left: 10px;
+		font-size: 15.6px;
 	}
 
 	&__link {
 		padding: 16px;
-		background: var(--orange);
+		background: var(--red);
 		font-weight: 700;
 		color: #fff;
 		font-size: fluid(20px, 16px);
 		width: 100%;
 		max-width: 420px;
-		border-radius: 10px;
+		border-radius: 50px;
 	}
 
 }

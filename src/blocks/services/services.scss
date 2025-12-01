@@ -16,22 +16,31 @@
 		font-weight: 800;
 		margin-bottom: fluid(20px, 12px);
 		text-align: center;
+		background: linear-gradient(90deg, #130890 0%, #000000 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
 
 		b {
-			color: var(--orange);
+			color: var(--red);
 		}
 	}
 
 	&__desc {
+		display: flex;
+		flex-direction: column;
 		text-align: center;
-		max-width: 835px;
+		max-width: 901px;
 		font-size: fluid(24px, 16px);
-		margin-bottom: fluid(60px, 24px);
+		margin-bottom: fluid(36px, 24px);
+
+		b {
+			font-weight: 700;
+		}
 	}
 
-	&__tabs-container {
-
-	}
+	&__tabs-container {}
 
 	&__tabs-nav {
 		display: flex;
@@ -50,16 +59,19 @@
 		font-weight: 700;
 		font-size: 14px;
 		padding: 12px 20px;
+		text-align: center;
+
+		span {
+			max-width: 160px;
+		}
 
 		&.active {
-			background: var(--orange);
+			background: var(--red);
 			color: #fff;
 		}
 	}
 
-	&__tabs {
-
-	}
+	&__tabs {}
 
 	&__tab {
 		display: none;
@@ -69,7 +81,7 @@
 
 		&.active {
 			display: flex;
-			animation: fade 0.3s ease-in-out;
+			animation: fadeIn 0.3s ease-in-out;
 		}
 
 		@include media("<=xs") {
@@ -108,13 +120,16 @@
 	&__tab-text {
 		max-width: 659px;
 		margin-bottom: fluid(40px, 20px);
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
 	}
 
 	&__tab-link {
 		@include flex-center;
 
 		border-radius: 6px;
-		border: 1px solid var(--orange);
+		border: 1px solid var(--red);
 		padding: 16px;
 		font-weight: 700;
 		width: 100%;

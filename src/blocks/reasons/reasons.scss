@@ -1,0 +1,90 @@
+@use 'lib' as *;
+
+.reasons {
+	$self: &;
+
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 40px;
+
+	&__top {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: fluid(40px, 20px) 0px;
+		background: #894D8C;
+	}
+
+	&__title {
+		text-align: center;
+		font-size: fluid(40px, 28px);
+		color: #fff;
+		font-weight: 600;
+	}
+
+	&__content {
+		position: relative;
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: fluid(40px, 24px);
+		position: relative;
+		z-index: 1;
+		padding-top: fluid(50px, 24px);
+		padding-bottom: fluid(70px, 35px);
+
+		@include media("<=md") {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include media("<=xs") {
+			grid-template-columns: 100%;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: row;
+		align-items: start;
+		gap: fluid(34px, 16px);
+
+		&::before {
+			content: '';
+			display: block;
+			width: fluid(24px, 16px); height: fluid(24px, 16px);
+			flex: 0 0 auto;
+			background: url("../img/sun.webp") no-repeat center / contain;
+		}
+
+		span {
+			background: linear-gradient(90deg, #130890 0%, #000000 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+			font-size: fluid(18px, 18px);
+			font-weight: 600;
+		}
+	}
+
+	&__bg {
+		position: absolute;
+		inset: 0;
+
+		&::after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background: #E7DBE7CC;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+}

@@ -1,63 +1,298 @@
 @@include("_head.html", {"id":"home"})
 @@include("_header.html")
 
-<section class="promo">
-    <div class="promo__container container">
-        <div class="promo__main">
-            <div class="promo__content">
-                <h1 class="promo__title">Спасаем натяжные потолки после потопа. <br> Вернем идеальный вид за 1 день!
-                </h1>
-                <p class="promo__desc">
-                    Затопили соседи? Не паникуйте! Мы профессионально сольем воду без повреждений, устраним плесень и
-                    полностью восстановим потолок. <br>
-                    Гарантия на все работы.
-                </p>
-                <div class="promo__cards">
-                    <div class="promo__card">
-                        <b class="promo__card-title">ДО</b>
-                        <img loading="lazy" src="./img/promo/1.webp" alt="">
+<section class="promotions">
+    <div class="promotions__container container">
+        <div class="promotions__swiper swiper">
+            <div class="swiper-wrapper">
+                <div class="promo-item promo-item_first swiper-slide">
+                    <div class="promo-item__side">
+                        <p class="promo-item__text">
+                            Время сбросить тяжесть с ног! Распрощайтесь с варикозом быстро и навсегдаю
+                        </p>
+                        <ul class="promo-item__list">
+                            <li class="promo-item__list-item">Лазерное лечение варикоза за 1 день - ЭВЛК</li>
+                            <li class="promo-item__list-item">Без госпитализации: Возвращайтесь к привычной жизни сразу.
+                            </li>
+                            <li class="promo-item__list-item">Без наркоза</li>
+                        </ul>
                     </div>
-                    <div class="promo__card">
-                        <b class="promo__card-title">ПОСЛЕ</b>
-                        <img loading="lazy" src="./img/promo/2.webp" alt="">
+                    <div class="promo-item__main">
+                        <p class="promo-item__desc">
+                            Только 1 день на лечение <br> - результат на годы!
+                        </p>
+                        <h3 class="promo-item__title">
+                            <span>СКИДКА до </span>
+                            <b>35%</b>
+                        </h3>
+                        <p class="promo-item__desc">
+                            Запишитесь и убедитесь: лечение может быть комфортным и выгодным.
+                        </p>
+                        <a href="#" class="promo-item__btn">ОНЛАЙН ЗАПИСЬ</a>
+                    </div>
+                    <div class="promo-item__image">
+                        <img loading="lazy" src="./img/promo-item/1.webp" alt="">
                     </div>
                 </div>
-                <div class="promo__buttons">
-                    <a href="#" class="promo__btn">СРОЧНО ВЫЗВАТЬ МАСТЕРА</a>
-                    <a href="#" class="promo__btn-border">УЗНАТЬ СТОИМОСТЬ</a>
+                <div class="promo-item promo-item_second swiper-slide">
+                    <div class="promo-item__side">
+                        <div class="promo-item__text">
+                            <p>
+                                Если диагноз “варикоз” уже подтвержден, первичная консультация у нас будет для вас
+                                <b>БЕСПЛАТНОЙ.</b>
+                            </p>
+                            <p>
+                                Приходите с имеющимися медицинскими документами, чтобы мы могли сосредоточиться на самом
+                                важном - на вариантах решения.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="promo-item__main">
+                        <p class="promo-item__desc">
+                            Только 1 день на лечение <br> - результат на годы!
+                        </p>
+                        <h3 class="promo-item__title">
+                            <span>
+                                АКЦИЯ: <br>
+                                Получи второе мнение флеболога  - <b>БЕСПЛАТНО</b>
+                            </span>
+                        </h3>
+                        <p class="promo-item__desc">
+                            При наличии медицинского заключения, подтверждающего диагноза варикозная болезнь БЕСПЛАТНО.
+                        </p>
+                        <a href="#" class="promo-item__btn">ОНЛАЙН ЗАПИСЬ</a>
+                    </div>
+                    <div class="promo-item__image">
+                        <img style="object-position: left top;" loading="lazy" src="./img/promo-item/2.webp" alt="">
+                    </div>
+                </div>
+                <div class="promo-item promo-item_third swiper-slide">
+                    <div class="promo-item__side">
+                        <p class="promo-item__text">
+                            ЛАЗЕРНОЕ ЛЕЧЕНИЕ ВАРИКОЗА ВОЗВРАЩАЕТ ЛЕГКОСТЬ И ЗДОРОВЬЕ НОГАМ ЗА 30 МИН!
+                            НИКАКИХ ШРАМОВ, РАЗРЕЗОВ И ГОСПИТАЛИЗАЦИИ!
+                        </p>
+                        <ul class="promo-item__list">
+                            <li class="promo-item__list-item">Современные лазерные методики</li>
+                            <li class="promo-item__list-item">Без боли и реабилитации</li>
+                            <li class="promo-item__list-item">БЕСПЛАТНАЯ консультаци при акции “Второе мнение”!</li>
+                            <li class="promo-item__list-item">Индивидуальный подход к каждому пациенту</li>
+                        </ul>
+                    </div>
+                    <div class="promo-item__main">
+                        <h3 class="promo-item__title">
+                            <span>СКИДКА на лазерное лечение варикоза </span>
+                            <b>35%</b>
+                        </h3>
+                        <a href="#" class="promo-item__btn">ОНЛАЙН ЗАПИСЬ</a>
+                    </div>
+                    <div class="promo-item__image">
+                        <img loading="lazy" src="./img/promo-item/3.webp" alt="">
+                    </div>
+                </div>
+                <div class="promo-item promo-item_four swiper-slide">
+                    <div class="promo-item__side">
+                        <p class="promo-item__text">
+                            Получите качественную диагностику
+                            от ведущих специалистов нашего центра
+                        </p>
+                    </div>
+                    <div class="promo-item__main">
+                        <h3 class="promo-item__title">
+                            <span>
+                                Прием флеболога + УЗИ ВЕН + План лечения
+                            </span>
+                        </h3>
+                        <p class="promo-item__price">
+                            790 р
+                            <span>2000 р</span>
+                        </p>
+                        <a href="#" class="promo-item__btn">ОНЛАЙН ЗАПИСЬ</a>
+                        <p class="promo-item__desc">
+                            Полная диагностика за 30 минут
+                        </p>
+                    </div>
+                    <div class="promo-item__image">
+                        <img loading="lazy" src="./img/promo-item/4.webp" alt="">
+                    </div>
                 </div>
             </div>
-            <img loading="lazy" src="./img/promo/bg.webp" alt="" class="promo__bg">
         </div>
-        <div class="promo__advs">
-            <div class="promo__adv">
-                <img loading="lazy" src="./img/promo/c-1.webp" alt="" class="promo__adv-img">
-                <div class="promo__adv-info">
-                    <h5 class="promo__adv-title">Работаем 24/7</h5>
-                    <p class="promo__adv-text">
-                        Наша команда работает в режиме 24/7 без выходных
+    </div>
+</section>
+
+<section class="gallery">
+    <div class="gallery__container container">
+        <h2 class="gallery__title"><b>ДО</b> и <b>ПОСЛЕ</b></h2>
+        <p class="gallery__desc">
+            Только реальные фото с наших объектов
+        </p>
+        <div class="gallery__swiper swiper">
+            <div class="swiper-wrapper">
+                <div class="gallery__slide swiper-slide">
+                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
+                    <p class="gallery__slide-text">
+                        Комбинация лазера и склеротерапии. Ведь пациентам нужны не только здоровые ножки, но и красивые!
+                    </p>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
+                    <p class="gallery__slide-text">
+                        Комбинация лазера и склеротерапии. Ведь пациентам нужны не только здоровые ножки, но и красивые!
+                    </p>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
+                    <p class="gallery__slide-text">
+                        Комбинация лазера и склеротерапии. Ведь пациентам нужны не только здоровые ножки, но и красивые!
+                    </p>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
+                    <p class="gallery__slide-text">
+                        Комбинация лазера и склеротерапии. Ведь пациентам нужны не только здоровые ножки, но и красивые!
+                    </p>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
+                    <p class="gallery__slide-text">
+                        Комбинация лазера и склеротерапии. Ведь пациентам нужны не только здоровые ножки, но и красивые!
+                    </p>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
+                    <p class="gallery__slide-text">
+                        Комбинация лазера и склеротерапии. Ведь пациентам нужны не только здоровые ножки, но и красивые!
+                    </p>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
+                    <p class="gallery__slide-text">
+                        Комбинация лазера и склеротерапии. Ведь пациентам нужны не только здоровые ножки, но и красивые!
+                    </p>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
+                    <p class="gallery__slide-text">
+                        Комбинация лазера и склеротерапии. Ведь пациентам нужны не только здоровые ножки, но и красивые!
+                    </p>
+                </div>
+                <div class="gallery__slide swiper-slide">
+                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
+                    <p class="gallery__slide-text">
+                        Комбинация лазера и склеротерапии. Ведь пациентам нужны не только здоровые ножки, но и красивые!
                     </p>
                 </div>
             </div>
-            <div class="promo__adv">
-                <img loading="lazy" src="./img/promo/c-2.webp" alt="" class="promo__adv-img">
-                <div class="promo__adv-info">
-                    <h5 class="promo__adv-title">Фиксированная цена</h5>
-                    <p class="promo__adv-text">
-                        Цена, которую мы называем после бесплатной диагностики, является окончательной
-                    </p>
+        </div>
+        <a href="#" class="gallery__link">Перейти в галерею</a>
+    </div>
+</section>
+
+<section class="price">
+    <div class="price__container container">
+        <h2 class="price__title">Прайс лист на услуги клиники</h2>
+        <ul class="price__list">
+            <li class="price__item">АКЦИЯ ДО КОНЦА ГОДА! <b>790 ₽</b></li>
+            <li class="price__item">АКЦИЯ ДО КОНЦА ГОДА! <b>790 ₽</b></li>
+            <li class="price__item">АКЦИЯ ДО КОНЦА ГОДА! <b>790 ₽</b></li>
+            <li class="price__item">АКЦИЯ ДО КОНЦА ГОДА! <b>790 ₽</b></li>
+            <li class="price__item">АКЦИЯ ДО КОНЦА ГОДА! <b>790 ₽</b></li>
+            <li class="price__item">АКЦИЯ ДО КОНЦА ГОДА! <b>790 ₽</b></li>
+            <li class="price__item">АКЦИЯ ДО КОНЦА ГОДА! <b>790 ₽</b></li>
+            <li class="price__item">АКЦИЯ ДО КОНЦА ГОДА! <b>790 ₽</b></li>
+            <li class="price__item">АКЦИЯ ДО КОНЦА ГОДА! <b>790 ₽</b></li>
+            <li class="price__item">АКЦИЯ ДО КОНЦА ГОДА! <b>790 ₽</b></li>
+            <li class="price__item">АКЦИЯ ДО КОНЦА ГОДА! <b>790 ₽</b></li>
+            <li class="price__item">АКЦИЯ ДО КОНЦА ГОДА! <b>790 ₽</b></li>
+            <li class="price__item">АКЦИЯ ДО КОНЦА ГОДА! <b>790 ₽</b></li>
+            <li class="price__item">АКЦИЯ ДО КОНЦА ГОДА! <b>790 ₽</b></li>
+            <li class="price__item">АКЦИЯ ДО КОНЦА ГОДА! <b>790 ₽</b></li>
+        </ul>
+    </div>
+</section>
+
+<section class="doctors">
+    <div class="doctors__container container">
+        <h2 class="doctors__title">Врачи <b>ВАСКУЛМЕД</b></h2>
+        <div class="doctors__swiper swiper">
+            <div class="swiper-wrapper">
+                <div class="doctors__item swiper-slide">
+                    <div class="doctors__item-side">
+                        <p class="doctors__item-name">ФИО</p>
+                        <div class="doctors__item-who">
+                            <b>Должность:</b>
+                        </div>
+                        <div class="doctors__item-list">
+                            <b>Образование:</b>
+                            <ul>
+                                <li>1996г. .</li>
+                                <li>1997г. </li>
+                            </ul>
+                        </div>
+                        <div class="doctors__item-btns">
+                            <a href="#" class="doctors__item-btn doctors__item-btn_red">Записаться на прием</a>
+                            <a href="#" class="doctors__item-btn doctors__item-btn_trans">Подробнее о враче</a>
+                        </div>
+                    </div>
+                    <div class="doctors__item-image">
+                        <img src="./img/doctors/1.webp" alt="">
+                    </div>
+                </div>
+                <div class="doctors__item swiper-slide">
+                    <div class="doctors__item-side">
+                        <p class="doctors__item-name">ФИО</p>
+                        <div class="doctors__item-who">
+                            <b>Должность:</b>
+                        </div>
+                        <div class="doctors__item-list">
+                            <b>Образование:</b>
+                            <ul>
+                                <li>1996г. .</li>
+                                <li>1997г. </li>
+                            </ul>
+                        </div>
+                        <div class="doctors__item-btns">
+                            <a href="#" class="doctors__item-btn doctors__item-btn_red">Записаться на прием</a>
+                            <a href="#" class="doctors__item-btn doctors__item-btn_trans">Подробнее о враче</a>
+                        </div>
+                    </div>
+                    <div class="doctors__item-image">
+                        <img src="./img/doctors/1.webp" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="promo__adv">
-                <img loading="lazy" src="./img/promo/c-3.webp" alt="" class="promo__adv-img">
-                <div class="promo__adv-info">
-                    <h5 class="promo__adv-title">Комплексный подход</h5>
-                    <p class="promo__adv-text">
-                        Наша стандартная процедура включает три ключевых этапа: <br>
-                        Слив -> Обработка -> Сушка.
-                    </p>
-                </div>
-            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reasons">
+    <div class="reasons__top">
+        <h2 class="reasons__title container">Варикоз сам не пройдет. <br> Почему нельзя ждать?</h2>
+    </div>
+    <div class="reasons__content">
+        <ul class="reasons__items container">
+            <li class="reasons__item">
+                <span>Варикоз самостоятельно без лечения не пройдет - он прогрессирует.</span>
+            </li>
+            <li class="reasons__item">
+                <span>Нарушение кровотока это серьёзная нагрузка на сердце</span>
+            </li>
+            <li class="reasons__item">
+                <span>Чем дольше откладываете, лечение сложнее и дороже.</span>
+            </li>
+            <li class="reasons__item">
+                <span>Без лечения очень высок риск тромбов и язв.</span>
+            </li>
+            <li class="reasons__item">
+                <span>Хронический варикоз ведет к трофическим язвам.</span>
+            </li>
+            <li class="reasons__item">
+                <span>Угроза тромбоза. Застой крови создает сгустки, которые могут оторваться.</span>
+            </li>
+        </ul>
+        <div class="reasons__bg">
+            <img loading="lazy" src="./img/reasons-bg.webp" alt="">
         </div>
     </div>
 </section>
@@ -65,30 +300,41 @@
 <section class="services">
     <div class="services__container container">
         <h2 class="services__title">
-            Основные <b>виды</b> оказываемых <b>услуг</b>
+            Наши услуги
         </h2>
         <p class="services__desc">
-            Вам не нужно искать разных специалистов для каждого этапа. Одним звонком вы получаете полный цикл услуг,
-            который не только убирает последствия, но и предотвращает будущие проблемы.
+            <b>Забудьте о варикозе и верните легкость в ногах.</b>
+            Наш подход: индивидуальный план лечения, прием ведет флеболог-хирург
+            с 15-летним опытом, а цены остаются доступными без скрытых доплат.
         </p>
         <div class="services__tabs-container">
             <div class="services__tabs-nav">
-                <button type="button" class="services__tabs-btn active">Слив воды</button>
-                <button type="button" class="services__tabs-btn">Обработка</button>
-                <button type="button" class="services__tabs-btn">Сушка</button>
-                <button type="button" class="services__tabs-btn">Ремонт</button>
-                <button type="button" class="services__tabs-btn">Установка люстр</button>
+                <button type="button" class="services__tabs-btn active">
+                    <span>Консультация и УЗИ флеболога</span>
+                </button>
+                <button type="button" class="services__tabs-btn">
+                    <span>Лазерная хирургия (ЭВЛК)</span>
+                </button>
+                <button type="button" class="services__tabs-btn">
+                    <span>Склеротерапия</span>
+                </button>
+                <button type="button" class="services__tabs-btn">
+                    <span>Подарочный сертификат</span>
+                </button>
             </div>
             <div class="services__tabs">
                 <div class="services__tab active">
                     <img loading="lazy" src="./img/services/1.webp" alt="" class="services__tab-img">
                     <div class="services__tab-content">
                         <h4 class="services__tab-title">Аккуратный слив воды без повреждения полотна</h4>
-                        <p class="services__tab-text">
-                            После протечки главное — действовать быстро и грамотно. Самостоятельные попытки слить воду
-                            могут привести к необратимым повреждениям: провисанию, растяжению или разрыву полотна. Мы
-                            обеспечим безопасный и чистый слив, сохранив целостность вашего потолка.
-                        </p>
+                        <div class="services__tab-text">
+                            <p>Ваш первый шаг к здоровым и красивым ногам</p>
+                            <p>
+                                Первый визит к флебологу - это самое важное решение на пути к избавлению от варикоза. Мы
+                                создали все условия, чтобы диагностика была для вас комфортной, точной и максимально
+                                информативной.
+                            </p>
+                        </div>
                         <a href="#" class="services__tab-link">Подробнее </a>
                     </div>
                 </div>
@@ -96,11 +342,14 @@
                     <img loading="lazy" src="./img/services/1.webp" alt="" class="services__tab-img">
                     <div class="services__tab-content">
                         <h4 class="services__tab-title">Аккуратный слив воды без повреждения полотна</h4>
-                        <p class="services__tab-text">
-                            После протечки главное — действовать быстро и грамотно. Самостоятельные попытки слить воду
-                            могут привести к необратимым повреждениям: провисанию, растяжению или разрыву полотна. Мы
-                            обеспечим безопасный и чистый слив, сохранив целостность вашего потолка.
-                        </p>
+                        <div class="services__tab-text">
+                            <p>Ваш первый шаг к здоровым и красивым ногам</p>
+                            <p>
+                                Первый визит к флебологу - это самое важное решение на пути к избавлению от варикоза. Мы
+                                создали все условия, чтобы диагностика была для вас комфортной, точной и максимально
+                                информативной.
+                            </p>
+                        </div>
                         <a href="#" class="services__tab-link">Подробнее </a>
                     </div>
                 </div>
@@ -108,11 +357,14 @@
                     <img loading="lazy" src="./img/services/1.webp" alt="" class="services__tab-img">
                     <div class="services__tab-content">
                         <h4 class="services__tab-title">Аккуратный слив воды без повреждения полотна</h4>
-                        <p class="services__tab-text">
-                            После протечки главное — действовать быстро и грамотно. Самостоятельные попытки слить воду
-                            могут привести к необратимым повреждениям: провисанию, растяжению или разрыву полотна. Мы
-                            обеспечим безопасный и чистый слив, сохранив целостность вашего потолка.
-                        </p>
+                        <div class="services__tab-text">
+                            <p>Ваш первый шаг к здоровым и красивым ногам</p>
+                            <p>
+                                Первый визит к флебологу - это самое важное решение на пути к избавлению от варикоза. Мы
+                                создали все условия, чтобы диагностика была для вас комфортной, точной и максимально
+                                информативной.
+                            </p>
+                        </div>
                         <a href="#" class="services__tab-link">Подробнее </a>
                     </div>
                 </div>
@@ -120,23 +372,14 @@
                     <img loading="lazy" src="./img/services/1.webp" alt="" class="services__tab-img">
                     <div class="services__tab-content">
                         <h4 class="services__tab-title">Аккуратный слив воды без повреждения полотна</h4>
-                        <p class="services__tab-text">
-                            После протечки главное — действовать быстро и грамотно. Самостоятельные попытки слить воду
-                            могут привести к необратимым повреждениям: провисанию, растяжению или разрыву полотна. Мы
-                            обеспечим безопасный и чистый слив, сохранив целостность вашего потолка.
-                        </p>
-                        <a href="#" class="services__tab-link">Подробнее </a>
-                    </div>
-                </div>
-                <div class="services__tab">
-                    <img loading="lazy" src="./img/services/1.webp" alt="" class="services__tab-img">
-                    <div class="services__tab-content">
-                        <h4 class="services__tab-title">Аккуратный слив воды без повреждения полотна</h4>
-                        <p class="services__tab-text">
-                            После протечки главное — действовать быстро и грамотно. Самостоятельные попытки слить воду
-                            могут привести к необратимым повреждениям: провисанию, растяжению или разрыву полотна. Мы
-                            обеспечим безопасный и чистый слив, сохранив целостность вашего потолка.
-                        </p>
+                        <div class="services__tab-text">
+                            <p>Ваш первый шаг к здоровым и красивым ногам</p>
+                            <p>
+                                Первый визит к флебологу - это самое важное решение на пути к избавлению от варикоза. Мы
+                                создали все условия, чтобы диагностика была для вас комфортной, точной и максимально
+                                информативной.
+                            </p>
+                        </div>
                         <a href="#" class="services__tab-link">Подробнее </a>
                     </div>
                 </div>
@@ -145,177 +388,46 @@
     </div>
 </section>
 
-<section class="callback">
-    <div class="callback__container container">
-        <h2 class="callback__title">Узнать стоимость и <b>вызвать мастера</b></h2>
-        <div class="callback__cards">
-            <div class="callback__card">
-                <div class="callback__card-icon">
-                    <img loading="lazy" src="./img/callback/1.svg" alt="">
-                </div>
-                Заявка на сайте и консультация
-            </div>
-            <div class="callback__card">
-                <div class="callback__card-icon">
-                    <img loading="lazy" src="./img/callback/2.svg" alt="">
-                </div>
-                Выезд мастера и точный расчет
-            </div>
-            <div class="callback__card">
-                <div class="callback__card-icon">
-                    <img loading="lazy" src="./img/callback/3.svg" alt="">
-                </div>
-                Заключение договора и начало работ
-            </div>
-            <div class="callback__card">
-                <div class="callback__card-icon">
-                    <img loading="lazy" src="./img/callback/4.svg" alt="">
-                </div>
-                Аккуратное выполнение работ
-            </div>
-            <div class="callback__card">
-                <div class="callback__card-icon">
-                    <img loading="lazy" src="./img/callback/5.svg" alt="">
-                </div>
-                Прием работы
-            </div>
-        </div>
-        <div class="callback__main">
-            <div class="callback__side">
-                <p class="callback__desc">
-                    Аккуратно удалим воду, тщательно просушим конструкцию и вернем потолку идеально ровный вид
-                </p>
-                <div class="callback__table">
-                    <div class="callback__table-row">
-                        Плановый слив воды
-                        <b>Цена: от 3500 ₽</b>
-                    </div>
-                    <div class="callback__table-row">
-                        Срочный слив воды
-                        <b>Цена: от 3500 ₽</b>
-                    </div>
-                    <div class="callback__table-row">
-                        Ночной слив воды 24/7
-                        <b>Цена: от 3500 ₽</b>
-                    </div>
-                </div>
-                <div class="callback__bottom">
-                    <p class="callback__text">
-                        Чтобы рассчитать точную стоимость, просто отправьте фото поврежденного потолка в наш <b>WhatsApp</b>.
-                        <br>
-                        Мы оперативно оценим масштаб работ и сообщим вам цену.
-                    </p>
-                    <a href="#" class="callback__social">
-                        <img loading="lazy" src="./img/wa.webp" alt="">
-                    </a>
-                </div>
-            </div>
-            <form class="callback__form">
-                <div class="callback__inputs">
-                    <input placeholder="Имя" type="text" class="custom-input">
-                    <input placeholder="Номер телефона" type="text" class="custom-input">
-                    <textarea placeholder="Адрес" class="custom-input"></textarea>
-                </div>
-                <button type="submit" class="callback__btn">Вызвать мастера</button>
-                <label class="callback__agree">
-                    <input type="checkbox" class="custom-checkbox">
-                    <span>Даю согласие на обработку персональных данных в соответствии с <a href="#">условиями</a></span>
-                </label>
-            </form>
-        </div>
-    </div>
-</section>
-
-<section class="kills">
-    <div class="kills__container container">
-        <div class="kills__side">
-            <h2 class="kills__title">
-                <b>Уничтожаем плесень и грибок</b> <br>
-                на <b>100%</b> с долгосрочной гарантией
-            </h2>
-            <p class="kills__desc">
-                Мы не просто маскируем проблему, а устраняем ее причину.
-                Наша технология гарантирует полное уничтожение спор, защиту вашего здоровья и сохранность ремонта.
-            </p>
-            <div class="kills__columns">
-                <div class="kills__column">
-                    <h4 class="kills__column-title">Санитарная зачистка и подготовка поверхностей</h4>
-                    <ul class="kills__column-list">
-                        <li class="kills__column-item">
-                            При необходимости аккуратно удаляем сильно пораженные материалы (обои, шпаклевку), которые
-                            уже не спасти.
-                        </li>
-                        <li class="kills__column-item">
-                            Мы убираем основной рассадник спор, чтобы антисептик подействовал максимально эффективно.
-                        </li>
-                    </ul>
-                </div>
-                <div class="kills__column">
-                    <h4 class="kills__column-title">Профессиональная обработка мощными антисептиками</h4>
-                    <ul class="kills__column-list">
-                        <li class="kills__column-item">
-                            Наносим промышленные средства, которые полностью уничтожают мицелий (корни) плесени и
-                            грибка. Составы безопасны для людей и животных после высыхания.
-                        </li>
-                        <li class="kills__column-item">
-                            Вы получаете не поверхностную, а глубинную обработку. Мы уничтожаем не просто запах, а саму
-                            биологическую угрозу.
-                        </li>
-                    </ul>
-                </div>
-                <div class="kills__column kills__card">
-                    Находим все очаги, даже скрытые
-                </div>
-                <div class="kills__column kills__card">
-                    Травим споры и мицелий на 100%
-                </div>
-                <div class="kills__column kills__card">
-                    Наносим барьер от повторного появления
-                </div>
-            </div>
-        </div>
-        <img loading="lazy" src="./img/kills/bg.webp" alt="" class="kills__img">
-    </div>
-</section>
-
-<section class="gallery">
-    <div class="gallery__container container">
-        <h2 class="gallery__title"><b>Фотографии</b> наших работ</h2>
-        <p class="gallery__desc">
-            Только реальные фото с наших объектов
+<section class="steps">
+    <div class="steps__container container">
+        <h2 class="steps__title">Как вылечить варикоз</h2>
+        <p class="steps__desc">
+            Лечение варикоза лазером (ЭВЛК) быстро, безопасно и эффективно!
         </p>
-        <div class="gallery__swiper swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img data-fancybox="gallery" loading="lazy" src="./img/about/bg.webp" alt="">
-                </div>
+        <div class="steps__items">
+            <div class="steps__item">
+                <b class="steps__item-num">Шаг 1</b>
+                <h4 class="steps__item-title">Запись на прием</h4>
+                <p class="steps__item-desc">
+                    Позвоните нам и приятная девушка запишет к нам на консультацию.
+                </p>
+                <img style="width: 110px; height: 103px; object-fit: contain; margin-top: 40px;" loading="lazy"
+                    src="./img/circle.webp" alt="" class="steps__item-img">
+            </div>
+            <div class="steps__item">
+                <b class="steps__item-num">Шаг 2</b>
+                <h4 class="steps__item-title">Пройдите консультацию флеболога + ультразвук вен</h4>
+                <p class="steps__item-desc">
+                    На первичном осмотре врач проведёт осмотр и ультразвуковое исследование, чтобы поставить точный
+                    диагноз и определить оптимальную тактику лечения
+                </p>
+            </div>
+            <div class="steps__item">
+                <b class="steps__item-num">Шаг 3</b>
+                <h4 class="steps__item-title">Лечение ЭВЛК</h4>
+                <p class="steps__item-desc">
+                    Лазер проходит под местной анестезией. Вы находитесь в сознании, общаетесь с доктором, слушаете
+                    приятную музыку. Через 30 минут операция заканчивается, после чего вы получаете выписку и
+                    опускаетесь домой!
+                </p>
+            </div>
+            <div class="steps__item">
+                <b class="steps__item-num">Шаг 4</b>
+                <h4 class="steps__item-title">Вы молодец! Ваши ножки теперь красивые и, самое главное, здоровые!</h4>
+                <img style="width: 50px; height: 47px; object-fit: contain; position: absolute; right: 35px; top: 17px;"
+                    loading="lazy" src="./img/circle.webp" alt="" class="steps__item-img">
             </div>
         </div>
-        <a href="#" class="gallery__link">Перейти в галерею</a>
     </div>
 </section>
 
@@ -327,179 +439,34 @@
             </h2>
             <div class="about__desc">
                 <p>
-                    Мы — небольшая, но слаженная бригада мастеров, которые не понаслышке знают все тонкости работы с
-                    натяжными потолками. В отличие от крупных компаний с накрутками за бренд и менеджеров, вы работаете
-                    напрямую с нами — теми, кто будет выполнять ремонт.
+                    Центр флебологии и лазерной хирургии Васкулмед является современной специализированной клиникой для
+                    лечения варикозной болезни и сосудистых «сеточек» самым передовыми методами.
                 </p>
                 <p>
-                    Наш подход — это честность и прямое общение. Мы не даем пустых обещаний, а сразу говорим, что можно
-                    исправить, а что нет, и почему. Цены — без переплат, только за реальную работу. Каждый выезд — это
-                    личная ответственность мастера, который заинтересован в результате, ведь наша репутация для нас
-                    важнее всего.
-                    Мы ценим ваше доверие и время, поэтому всегда на связи, приезжаем быстро и делаем так, как сделали
-                    бы у себя дома.
+                    В клинике наши пациенты могут получить полный спектр самой современной флебологической помощи:
+                    лечение варикозного расширения вен с помощью методов ЭВЛК (эндовенозная лазерная коагуляция), РЧО
+                    (радиочастотная облитерация), устраняем косметические сосуды с помощью минифлебэктомии и
+                    склеротерапии.
+                </p>
+                <p>
+                    Преимущество современной флебологии в том, что пациент, получая высококачественную услугу, может
+                    сразу идти домой, избавившись от недуга. Никакой госпитализации, никаких разрезов, никаких наркозов
+                    – всё лечится через микропроколы без наложения швов и сохранения активности!
                 </p>
             </div>
         </div>
+        <button type="button" class="about__more">
+            <span>Показать ещё</span>
+            <span>Скрыть</span>
+        </button>
         <img src="./img/about/bg.webp" alt="" class="about__image">
-    </div>
-</section>
-
-<section class="reviews">
-    <div class="reviews__container container">
-        <h2 class="reviews__title">
-            <b>Отзывы</b> клиентов о нашей работе
-        </h2>
-    </div>
-</section>
-
-<section class="answers">
-    <div class="answers__container container">
-        <h2 class="answers__title">
-            Отвечаем на <b>частые вопросы</b> <br>
-            о сливе воды с натяжных потолков
-        </h2>
-        <div class="answers__items">
-            <div class="answers__items-column">
-                <div class="answers__item active">
-                    <h4 class="answers__item-title"><span>Вначале нужно поклеить обои или установить потолок?</span>
-                    </h4>
-                    <p class="answers__item-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla necessitatibus quaerat
-                        incidunt reiciendis ducimus iure alias ea architecto eaque?
-                    </p>
-                </div>
-                <div class="answers__item">
-                    <h4 class="answers__item-title"><span>Вначале нужно поклеить обои или установить потолок?</span>
-                    </h4>
-                    <p class="answers__item-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla necessitatibus quaerat
-                        incidunt reiciendis ducimus iure alias ea architecto eaque?
-                    </p>
-                </div>
-                <div class="answers__item">
-                    <h4 class="answers__item-title"><span>Вначале нужно поклеить обои или установить потолок?</span>
-                    </h4>
-                    <p class="answers__item-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla necessitatibus quaerat
-                        incidunt reiciendis ducimus iure alias ea architecto eaque?
-                    </p>
-                </div>
-                <div class="answers__item">
-                    <h4 class="answers__item-title"><span>Вначале нужно поклеить обои или установить потолок?</span>
-                    </h4>
-                    <p class="answers__item-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla necessitatibus quaerat
-                        incidunt reiciendis ducimus iure alias ea architecto eaque?
-                    </p>
-                </div>
-                <div class="answers__item">
-                    <h4 class="answers__item-title"><span>Вначале нужно поклеить обои или установить потолок?</span>
-                    </h4>
-                    <p class="answers__item-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla necessitatibus quaerat
-                        incidunt reiciendis ducimus iure alias ea architecto eaque?
-                    </p>
-                </div>
-                <div class="answers__item">
-                    <h4 class="answers__item-title"><span>Вначале нужно поклеить обои или установить потолок?</span>
-                    </h4>
-                    <p class="answers__item-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla necessitatibus quaerat
-                        incidunt reiciendis ducimus iure alias ea architecto eaque?
-                    </p>
-                </div>
-                <div class="answers__item">
-                    <h4 class="answers__item-title"><span>Вначале нужно поклеить обои или установить потолок?</span>
-                    </h4>
-                    <p class="answers__item-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla necessitatibus quaerat
-                        incidunt reiciendis ducimus iure alias ea architecto eaque?
-                    </p>
-                </div>
-                <div class="answers__item">
-                    <h4 class="answers__item-title"><span>Вначале нужно поклеить обои или установить потолок?</span>
-                    </h4>
-                    <p class="answers__item-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla necessitatibus quaerat
-                        incidunt reiciendis ducimus iure alias ea architecto eaque?
-                    </p>
-                </div>
-            </div>
-            <div class="answers__items-column">
-                <div class="answers__item">
-                    <h4 class="answers__item-title"><span>Вначале нужно поклеить обои или установить потолок?</span>
-                    </h4>
-                    <p class="answers__item-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla necessitatibus quaerat
-                        incidunt reiciendis ducimus iure alias ea architecto eaque?
-                    </p>
-                </div>
-                <div class="answers__item">
-                    <h4 class="answers__item-title"><span>Вначале нужно поклеить обои или установить потолок?</span>
-                    </h4>
-                    <p class="answers__item-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla necessitatibus quaerat
-                        incidunt reiciendis ducimus iure alias ea architecto eaque?
-                    </p>
-                </div>
-                <div class="answers__item">
-                    <h4 class="answers__item-title"><span>Вначале нужно поклеить обои или установить потолок?</span>
-                    </h4>
-                    <p class="answers__item-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla necessitatibus quaerat
-                        incidunt reiciendis ducimus iure alias ea architecto eaque?
-                    </p>
-                </div>
-                <div class="answers__item">
-                    <h4 class="answers__item-title"><span>Вначале нужно поклеить обои или установить потолок?</span>
-                    </h4>
-                    <p class="answers__item-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla necessitatibus quaerat
-                        incidunt reiciendis ducimus iure alias ea architecto eaque?
-                    </p>
-                </div>
-                <div class="answers__item">
-                    <h4 class="answers__item-title"><span>Вначале нужно поклеить обои или установить потолок?</span>
-                    </h4>
-                    <p class="answers__item-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla necessitatibus quaerat
-                        incidunt reiciendis ducimus iure alias ea architecto eaque?
-                    </p>
-                </div>
-                <div class="answers__item">
-                    <h4 class="answers__item-title"><span>Вначале нужно поклеить обои или установить потолок?</span>
-                    </h4>
-                    <p class="answers__item-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla necessitatibus quaerat
-                        incidunt reiciendis ducimus iure alias ea architecto eaque?
-                    </p>
-                </div>
-                <div class="answers__item">
-                    <h4 class="answers__item-title"><span>Вначале нужно поклеить обои или установить потолок?</span>
-                    </h4>
-                    <p class="answers__item-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla necessitatibus quaerat
-                        incidunt reiciendis ducimus iure alias ea architecto eaque?
-                    </p>
-                </div>
-                <div class="answers__item">
-                    <h4 class="answers__item-title"><span>Вначале нужно поклеить обои или установить потолок?</span>
-                    </h4>
-                    <p class="answers__item-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla necessitatibus quaerat
-                        incidunt reiciendis ducimus iure alias ea architecto eaque?
-                    </p>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
 <section class="articles">
     <div class="articles__container container">
         <h2 class="articles__title">
-            Полезные <b>статьи</b> о сливе воды с натяжных потолков
+            Полезные статьи
         </h2>
         <div class="articles__items">
             <a href="#" class="articles__item">
@@ -520,6 +487,28 @@
             </a>
         </div>
         <a href="#" class="articles__link">Все статьи</a>
+    </div>
+</section>
+
+<section class="contacts">
+    <div class="contacts__container container">
+        <div class="contacts__content">
+            <h2 class="contacts__title">Контакты</h2>
+            <p class="contacts__address">г.Владимир, ул. Лакина, 2А</p>
+            <ul class="contacts__list">
+                <li>Часы работы с 8:00 до 22:00 ЕЖЕДНЕВНО</li>
+                <li>Email: <a href="#">vasculmed@yandex.ru</a></li>
+            </ul>
+            <div class="contacts__call">
+                <b>Звоните:</b>
+                <a href="#">+7 (472) 805-09-55</a>
+            </div>
+            <div class="contacts__btns">
+                <a href="#" class="contacts__btn contacts__btn_red">Онлайн запись</a>
+                <a href="#" class="contacts__btn contacts__btn_blue">Заказать обратный звонок</a>
+            </div>
+        </div>
+        <div id="map" class="contacts__map"></div>
     </div>
 </section>
 

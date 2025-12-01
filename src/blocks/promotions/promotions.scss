@@ -1,0 +1,26 @@
+@use 'lib' as *;
+
+.promotions {
+	$self: &;
+
+	padding-top: var(--header-height);
+	margin-bottom: 75px;
+
+	@include media("<=md") {
+		// height: 100svh;
+	}
+
+	&__container.container {
+		@include media("<=md") {
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	&__swiper.swiper {
+		@include media("<=md") {
+			height: 100%;
+		}
+	}
+
+}

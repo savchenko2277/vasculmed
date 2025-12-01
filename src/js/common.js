@@ -3,6 +3,7 @@ import "./polyfills.js";
 import "./blocks.js";
 import { driveTabs } from "./libs/driveTabs";
 import Swiper from "swiper";
+import { Autoplay } from "swiper/modules";
 import { Fancybox } from "@fancyapps/ui/dist/fancybox/";
 
 // Функции
@@ -94,22 +95,44 @@ const setAnswers = () => {
 }
 
 const setSwipers = () => {
+	const promotionsSwiper = new Swiper('.promotions__swiper', {
+		modules: [Autoplay],
+		slidesPerView: 1,
+		spaceBetween: 20,
+		loop: true,
+		autoHeight: true,
+		autoplay: {
+			delay: 5000
+		}
+	})
+	const doctorsSwiper = new Swiper('.doctors__swiper', {
+		slidesPerView: 1.05,
+		spaceBetween: 20,
+		loop: true,
+		breakpoints: {
+
+		}
+	})
 	const swiper = new Swiper('.gallery__swiper', {
-		slidesPerView: 1.3,
-		spaceBetween: 10,
+		slidesPerView: 1,
+		spaceBetween: 20,
 		loop: true,
 		breakpoints: {
 			576: {
-				slidesPerView: 2.3
+				slidesPerView: 2,
+				spaceBetween: 25,
 			},
 			768: {
-				slidesPerView: 3.3
+				slidesPerView: 2.5,
+				spaceBetween: 30,
 			},
 			992: {
-				slidesPerView: 4.3
+				slidesPerView: 3,
+				spaceBetween: 35
 			},
 			1200: {
-				slidesPerView: 5.3
+				slidesPerView: 3.5,
+				spaceBetween: 45
 			}
 		}
 	})
@@ -117,6 +140,27 @@ const setSwipers = () => {
 
 const setGallery = () => {
 	Fancybox.bind('[data-fancybox="gallery"]', {});
+}
+
+const setAboutMore = () => {
+	const about = document.querySelector('.about');
+	if (!about) return;
+
+	const paragraphs = about.querySelectorAll('.about__desc p');
+	const btn = about.querySelector('.about__more');
+
+	if(window.matchMedia('(max-width: 768px)').matches) {
+		btn.addEventListener('click', () => {
+			paragraphs.forEach((p, i) => {
+				p.classList.toggle('active');
+			});
+			btn.classList.toggle('active');
+		})
+	} else {
+		paragraphs.forEach((p, i) => {
+			p.classList.remove('active');
+		});
+	}
 }
 
 // Запуск функций
@@ -127,4 +171,6 @@ setAnswers();
 setSwipers();
 setGallery();
 setHeader();
+setAboutMore();
 window.addEventListener('resize', throttle(setHeader, 200), { passive: true });
+window.addEventListener('resize', throttle(setAboutMore, 200), { passive: true });

@@ -11,12 +11,17 @@
 
 	&__title {
 		font-size: fluid(40px, 28px);
-		font-weight: 800;
-		max-width: 590px;
-		margin-bottom: fluid(52px, 28px);
+		font-weight: 600;
+		margin-bottom: 28px;
+		background: linear-gradient(90deg, #130890 0%, #000000 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		width: fit-content;
 
 		b {
-			color: var(--orange);
+			color: var(--red);
 		}
 
 		@include media("<=xs") {
@@ -27,8 +32,8 @@
 	&__items {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		gap: fluid(55px, 32px);
-		margin-bottom: fluid(60px, 40px);
+		gap: fluid(40px, 32px);
+		margin-bottom: 40px;
 
 		@include media("<=xlg") {
 			grid-template-columns: repeat(2, 1fr);
@@ -50,10 +55,10 @@
 
 	&__item-img {
 		width: 100%;
-		aspect-ratio: 300 / 180;
+		aspect-ratio: 313 / 218;
 		object-fit: cover;
 		margin-bottom: 24px;
-		max-width: 300px;
+		border-radius: 10px;
 	}
 
 	&__item-title {
@@ -66,10 +71,10 @@
 		padding: 17px;
 		width: 100%;
 		max-width: 420px;
-		background: var(--orange);
+		background: var(--red);
 		color: #fff;
 		font-weight: 700;
-		border-radius: 10px;
+		border-radius: 50px;
 	}	
 
 }
