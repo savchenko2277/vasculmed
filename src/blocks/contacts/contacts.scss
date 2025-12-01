@@ -65,7 +65,7 @@
 		a {
 			font-size: 22px;
 			font-weight: 800;
-			color: var(--red);
+			color: #0D7CEE;
 		}
 	}
 
@@ -90,7 +90,7 @@
 		flex: 1 1 auto;
 
 		&_red {
-			background: var(--red);
+			background: var(--blue-gradient);
 		}
 
 		&_blue {

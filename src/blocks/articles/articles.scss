@@ -4,6 +4,7 @@
 	$self: &;
 
 	padding-bottom: fluid(100px, 70px);
+	overflow: hidden;
 
 	&__container {
 
@@ -29,19 +30,9 @@
 		}
 	}
 
-	&__items {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: fluid(40px, 32px);
-		margin-bottom: 40px;
-
-		@include media("<=xlg") {
-			grid-template-columns: repeat(2, 1fr);
-		}
-
-		@include media("<=xs") {
-			grid-template-columns: 1fr;
-		}
+	&__items.swiper {
+		margin-bottom: 30px;
+		overflow: visible;
 	}
 
 	&__item {
@@ -71,7 +62,7 @@
 		padding: 17px;
 		width: 100%;
 		max-width: 420px;
-		background: var(--red);
+		background: var(--blue-gradient);
 		color: #fff;
 		font-weight: 700;
 		border-radius: 50px;

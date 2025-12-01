@@ -66,7 +66,7 @@
 		}
 
 		&.active {
-			background: var(--red);
+			background: var(--blue-gradient);
 			color: #fff;
 		}
 	}
@@ -129,7 +129,7 @@
 		@include flex-center;
 
 		border-radius: 6px;
-		border: 1px solid var(--red);
+		border: 1px solid #0D7CEE;
 		padding: 16px;
 		font-weight: 700;
 		width: 100%;

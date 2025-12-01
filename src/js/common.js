@@ -95,6 +95,34 @@ const setAnswers = () => {
 }
 
 const setSwipers = () => {
+	const articlesSwiper = new Swiper('.articles__items', {
+		slidesPerView: 1.05,
+		spaceBetween: 20,
+		breakpoints: {
+			640: {
+				slidesPerView: 2,
+				spaceBetween: 30
+			},
+			1024: {
+				slidesPerView: 3,
+				spaceBetween: 30
+			},
+			1280: {
+				slidesPerView: 4,
+				spaceBetween: 40
+			}
+		}
+	})
+	const promoSecondSwiper = new Swiper('.promo-second__swiper', {
+		slidesPerView: 1.1,
+		spaceBetween: 20,
+		breakpoints: {
+			640: {
+				slidesPerView: 2,
+				spaceBetween: 30
+			}
+		}
+	})
 	const promotionsSwiper = new Swiper('.promotions__swiper', {
 		modules: [Autoplay],
 		slidesPerView: 1,
@@ -148,20 +176,28 @@ const setAboutMore = () => {
 
 	const paragraphs = about.querySelectorAll('.about__desc p');
 	const btn = about.querySelector('.about__more');
+	if (!btn || !paragraphs.length) return;
 
-	if(window.matchMedia('(max-width: 768px)').matches) {
-		btn.addEventListener('click', () => {
-			paragraphs.forEach((p, i) => {
-				p.classList.toggle('active');
-			});
+	if (!btn._toggleParagraphs) {
+		btn._toggleParagraphs = () => {
+			paragraphs.forEach((p) => p.classList.toggle('active'));
 			btn.classList.toggle('active');
-		})
-	} else {
-		paragraphs.forEach((p, i) => {
-			p.classList.remove('active');
-		});
+		};
 	}
-}
+
+	const handler = btn._toggleParagraphs;
+
+	btn.removeEventListener('click', handler);
+
+	if (window.matchMedia('(max-width: 768px)').matches) {
+		btn.addEventListener('click', handler);
+	} else {
+		paragraphs.forEach((p) => p.classList.remove('active'));
+		btn.classList.remove('active');
+	}
+};
+
+
 
 // Запуск функций
 updateVH();
@@ -172,5 +208,6 @@ setSwipers();
 setGallery();
 setHeader();
 setAboutMore();
+
 window.addEventListener('resize', throttle(setHeader, 200), { passive: true });
 window.addEventListener('resize', throttle(setAboutMore, 200), { passive: true });
