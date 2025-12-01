@@ -1,0 +1,30 @@
+@use 'lib' as *;
+
+.custom-checkbox {
+	$self: &;
+
+	width: 24px; height: 24px;
+	border-radius: 6px;
+	border: 1px solid var(--orange);
+	appearance: none;
+	position: relative;
+	cursor: pointer;
+	flex: 0 0 auto;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 50%; left: 50%;
+		width: 15px; height: 15px;
+		border-radius: 100%;
+		background: var(--orange);
+		opacity: 0;
+		transition: all var(--trans);
+		transform: translate(-50%, -50%);
+	}
+
+	&:checked::after {
+		opacity: 1;
+	}
+
+}

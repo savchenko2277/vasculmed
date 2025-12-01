@@ -1,0 +1,82 @@
+@use 'lib' as *;
+
+.answers {
+	$self: &;
+
+	padding-bottom: fluid(110px, 50px);
+
+	&__container {
+
+	}
+
+	&__title {
+		margin-bottom: 24px;
+		font-size: fluid(40px, 27px);
+		font-weight: 800;
+		text-align: center;
+
+		b {
+			color: var(--orange);
+		}
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0 fluid(94px, 24px);
+
+		@include media("<=sm") {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__item {
+		border-bottom: 1px solid #3C3C3C;
+		display: grid;
+		grid-template-rows: max-content 0fr;
+		transition: all var(--trans);
+
+		&.active {
+			grid-template-rows: max-content 1fr;
+		}
+	}
+
+	&__item.active &__item-content {
+		padding-bottom: 36px;
+	}
+
+	&__item.active &__item-title::after {
+		transform: rotate(180deg);
+	}
+
+	&__item-title {
+		padding: 36px 0px;
+		font-size: 20px;
+		font-weight: 700;
+		color: rgba($color: #0C1F28, $alpha: 0.6);
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		cursor: pointer;
+
+		span {
+			padding-right: 36px;
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			height: 10px; width: 18px;
+			background: url("../img/icons/arrow-down.svg") center / contain no-repeat;
+			transition: all var(--trans);
+			flex: 0 0 auto;
+		}
+	}
+
+	&__item-content {
+		overflow: hidden;
+		transition: all var(--trans);
+	}
+
+}

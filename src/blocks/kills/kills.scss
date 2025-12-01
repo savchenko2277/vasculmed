@@ -1,0 +1,120 @@
+@use 'lib' as *;
+
+.kills {
+	$self: &;
+
+	background: #EFF3F8;
+	padding: 50px 0px;
+	margin-bottom: fluid(100px, 50px);
+
+	&__container {
+		display: flex;
+		flex-direction: row;
+		gap: fluid(120px, 40px);
+
+		@include media("<=xlg") {
+			flex-direction: column;
+			gap: 40px;
+		}
+	}
+
+	&__side {}
+
+	&__title {
+		font-size: fluid(40px, 22px);
+		font-weight: 800;
+		margin-bottom: 20px;
+
+		b {
+			color: var(--orange);
+		}
+	}
+
+	&__desc {
+		margin-bottom: fluid(42px, 24px);
+		font-size: fluid(24px, 19px);
+	}
+
+	&__columns {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 28px;
+
+		@include media("<=xs") {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	&__column {
+		grid-column: span 2;
+
+		&:nth-child(1) {
+			grid-column: span 3;
+
+			@include media("<=xs") {
+				grid-column: span 2;
+				grid-row: 2 / auto;
+			}
+		}
+
+		&:nth-child(2) {
+			grid-column: span 3;
+
+			@include media("<=xs") {
+				grid-column: span 2;
+			}
+		}
+
+		&:nth-child(3) {
+			@include media("<=xs") {
+				grid-row: 1 / auto;
+			}
+		}
+
+		&:nth-child(4) {
+			@include media("<=xs") {
+				grid-row: 3 / auto;
+			}
+		}
+	}
+
+	&__column-title {
+		font-size: 23px;
+		margin-bottom: 24px;
+		font-weight: 500;
+	}
+
+	&__column-list {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	&__column-item {
+		list-style: disc;
+		margin-left: 28px;
+	}
+
+	&__card {
+		font-size: 20px;
+		font-weight: 800;
+		color: var(--orange);
+		padding: 15px 7px;
+		background: #fff;
+		border-radius: 20px;
+		text-align: center;
+	}
+
+	&__img {
+		width: 100%;
+		max-width: 444px;
+		aspect-ratio: 444 / 592;
+		object-fit: cover;
+		border-radius: 10px;
+
+		@include media("<=xs") {
+			aspect-ratio: 333 / 302;
+		}
+	}
+
+}
