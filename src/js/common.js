@@ -27,9 +27,6 @@ const setHeader = () => {
 	const header = document.querySelector('.header');
 	if (!header) return;
 
-	const headerList = header.querySelector('.header__list');
-	const headerMenu = header.querySelector('.header__menu');
-	const headerMainContainer = header.querySelector('.header__main-container');
 	const headerBurger = header.querySelector('.header__burger');
 
 	document.querySelectorAll(".header__list-item_sub-menu").forEach(item => {
@@ -39,13 +36,6 @@ const setHeader = () => {
 			item.classList.toggle('is-open');
 		});
 	});
-
-	if (window.matchMedia('(max-width: 960px)').matches) {
-		headerMenu.appendChild(headerList);
-	} else {
-		headerMainContainer.appendChild(headerList);
-		header.classList.remove('is-open');
-	}
 
 	window.addEventListener('scroll', {
 		passive: true,
@@ -59,9 +49,17 @@ const setHeader = () => {
 	});
 
 	const headerHeight = header.offsetHeight;
+
 	document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+
 	headerBurger.addEventListener('click', () => {
 		header.classList.toggle('is-open');
+
+		if (header.classList.contains('is-open')) {
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = '';
+		}
 	});
 }
 
@@ -128,7 +126,6 @@ const setSwipers = () => {
 		slidesPerView: 1,
 		spaceBetween: 20,
 		loop: true,
-		autoHeight: true,
 		autoplay: {
 			delay: 5000
 		}
@@ -209,5 +206,4 @@ setGallery();
 setHeader();
 setAboutMore();
 
-window.addEventListener('resize', throttle(setHeader, 200), { passive: true });
 window.addEventListener('resize', throttle(setAboutMore, 200), { passive: true });
